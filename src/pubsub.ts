@@ -3,7 +3,6 @@ import { pushNotification } from './notification.js'
 import { setSub, getSub, setPub, getPub } from './keystore.js'
 import WebSocket from 'ws'
 
-
 async function socketSend(socket: WebSocket, socketMessage: ISocketMessage) {
   if (socket.readyState === 1) {
     const message = JSON.stringify(socketMessage)

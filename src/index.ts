@@ -91,9 +91,9 @@ app.ready(() => {
   setInterval(
     () => {
       const sockets: any = wsServer.clients
-      console.log(`Live connections: ${wsServer.clients.size}`)
+      console.log(`WalletConnect ws: ${wsServer.clients.size}`)
     },
-    10000 // 10 seconds
+    30000 // 30 seconds
   )
 })
 
