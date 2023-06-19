@@ -15,7 +15,6 @@ services:
     depends_on:
       - walletconnect-redis
     build:
-      context: ./
       dockerfile: Dockerfile
       target: walletConnectServer
     restart: on-failure
@@ -26,6 +25,7 @@ services:
     environment:
       - HOST=${HOST-0.0.0.0}
       - PORT=${PORT-5000}
+      - REDIS_URL=${REDIS_URL-redis://wc-redis:6379}
 
   # For debugging purposes:
   # e.g.: BUILDKIT_PROGRESS=plain docker compose --env-file .env.production up -d --build debug-web
