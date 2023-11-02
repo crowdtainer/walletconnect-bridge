@@ -2,7 +2,7 @@ version: '3.7'
 services:
   walletconnect-redis:
     hostname: wc-redis
-    image: 'redis:7.0.8-alpine'
+    image: 'redis:7.2.2-alpine3.18'
     restart: on-failure
     volumes:
       - /var/redis/data:/data
