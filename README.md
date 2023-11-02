@@ -7,3 +7,8 @@ Up until the time of this writting, WalletConnect (the company behind the 'walle
 Therefore this folder provides the needed code for self-hosting a bridge server, forked from the last version available (v1), but with dependencies updated and any modifications needed to make the service functional.
 
 It is important to be able to self-host all parts of an application, both for decentralization as well as cost-saving (GDPR compliance).
+
+To build & run:
+```sh
+docker compose up -d --build walletconnect-bridge-server 
+```
