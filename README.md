@@ -1,3 +1,5 @@
+## This repository is now archived.
+
 # WalletConnect Bridge Server
 
 Self-hosting bridge server for relaying WalletConnect connections in Crowdtainer.
